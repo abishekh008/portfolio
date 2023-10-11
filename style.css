@@ -1,0 +1,99 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: blue;
+  padding: 10px 0;
+}
+
+.navbar img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: blue;
+  margin: 0 10px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: pink;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #00f;
+}
+
+.navbar a:hover::before {
+  transform: scaleX(1);
+}
+
+.img-fluid {
+  width: 100%;
+  height: 100%;
+}
+
+.multitext {
+  color: purple;
+  font-size: 50px;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  overflow: hidden;
+}
+
+.topline {
+  display: block;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: #3d535f;
+}
+
+.abt {
+  color: #7f00ff;
+}
+
+.abct {
+  color: #7f00ff;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .imgbox img {
+      max-width: 100%;
+      height: auto;
+      max-height: 300px;
+  }
+  .navbar a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: blue;
+    margin: 0 10px;
+    position: relative;
+    transition: color 0.3s;
+  
+}
+}
