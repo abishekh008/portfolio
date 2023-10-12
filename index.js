@@ -4,8 +4,10 @@ function validateForm() {
   var message = document.getElementById("message").value;
 
   if (name !== '' && email !== '' && message !== '') {
-      alert("Sent successfully : )");
+    setTimeout(function() {
+      alert("Sent successfully :)");
+    }, 1000);
   } else {
-      alert("Please fill in all fields.");
+    alert("Please fill in all fields.");
   }
 }
